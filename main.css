@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(90deg, #4743d0, #830863);
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 3vw;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+input,
+button {
+    background-color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    padding: 15px 30px;
+}
+
+input {
+    font-weight: bold;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.poke-container {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    flex-wrap: wrap; 
+    padding: 0.5rem;
+    width: 100%;
+    gap: 10px; 
+}
+
+.poke-box {
+    width: calc(20% - 10px); 
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 10px;
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.poke-box img {
+    margin: 10px 0;
+    width: 100%; 
+    height: auto; 
+}
+
+.poke-box h4 {
+    font-size: 1.5vw; 
+    margin: 5px auto;
+}
+
+.poke-box p {
+    font-size: 1vw;
+    margin: 5px auto;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 5vw; 
+    }
+
+    .poke-box {
+        width: calc(50% - 10px); 
+    }
+
+    .poke-box h4 {
+        font-size: 3vw; 
+    }
+
+    .poke-box p {
+        font-size: 2vw; 
+    }
+}
