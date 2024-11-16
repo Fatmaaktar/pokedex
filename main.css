@@ -84,6 +84,11 @@ button {
     font-size: 1vw;
     margin: 5px auto;
 }
+.poke-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
 
 @media (max-width: 600px) {
     h1 {
